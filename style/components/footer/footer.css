@@ -1,0 +1,65 @@
+@import "./../../project/style .css";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+:root {
+  --footer-bg-color: var(--pearl-white);
+  --footer-bg-basement-color: var(--thunder);
+  --footer-text-color: var(--honey-yellow);
+  --footer-hover-color: var(--gray-silk);
+  --footer-hover-text-color: var(--thunder);
+
+}
+
+body {
+  margin: 0;
+}
+
+
+.footer {
+  width: 100%;
+  height: 400px;
+  display: block;
+  color: var(--footer-text-color);
+  background-color: var(--pale-green);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-top__info, .footer-top__contacts, .footer-top__map {
+  width: 20%;
+}
+
+.footer-top__info, .footer-top__contacts {
+  padding: 1.1em;
+  font-size: 1.3em;
+}
+
+.footer-top__contacts a {
+  color: var(--footer-text-color);
+}
+
+.footer-top__contacts a:hover {
+  color: var(--footer-hover-text-color);
+}
+
+.footer__basement {
+  width: 100%;
+  display: block;
+  background-color: var(--footer-bg-basement-color);
+  color: white;
+
+}
+
+.footer__basement .container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__basement a {
+  color: white;
+  height: 30px;
+  width: 30px;
+}

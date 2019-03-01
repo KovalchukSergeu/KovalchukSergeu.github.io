@@ -1,0 +1,68 @@
+@import "./../../project/style .css";
+
+:root {
+  --header-bg-color: var(--pearl-white);
+  --header-text-color: var(--honey-yellow);
+  --header-hover-color: var(--gray-silk);
+  --header-hover-text-color: var(--pearl-white);
+  --header-active-color: var(--gray-silk);
+  --header-focus-color: var(--pale-green);
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: var(--header-bg-color);
+}
+
+.logo img{
+ width: 10rem;
+ height: 6rem;
+  margin-left: 2rem;
+}
+
+.menu ul {
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu a{
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0 1.5rem;
+  border-radius: 0.4em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: "Niagara Solid", sans-serif;
+  color: var(--header-text-color);
+  line-height: 5rem;
+
+}
+
+.menu a:hover{
+  background: var(--header-hover-color);
+}
+
+.menu a:active{
+  background: var(--header-active-color);
+}
+
+.menu a:focus{
+  background: var(--header-focus-color);
+}
+
+.enter-menu {
+  margin: 1.5rem 1rem;
+}
