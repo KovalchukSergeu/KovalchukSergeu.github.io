@@ -1,0 +1,77 @@
+@import "./../../style.css";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+:root {
+  --content-bg-color: var(--pearl-white);
+  --content-text-color: var(--honey-yellow);
+  --content-hover-color: var(--gray-silk);
+  --content-hover-text-color: var(--pearl-white);
+  --content-active-color: var(--gray-silk);
+  --content-focus-color: var(--pale-green);
+}
+
+.main__container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--content-bg-color);
+}
+
+.content {
+  width: 50%;
+  background-color: var(--content-bg-color);
+  font-family: "Poppins", sans-serif;
+  color: var(--content-text-color);
+}
+
+.content h1 {
+  font-size: 3em;
+  font-family: "Poppins", sans-serif;
+  padding: 1.5em 0;
+}
+
+.content p {
+  font-size: 1.5em;
+  font-family: "Poppins", sans-serif;
+  padding-top: 1.5em;
+}
+
+.hr {
+  background: url("./../../../img/hr-000.png") no-repeat 50% 50%;
+  width: 100%;
+  height: 10px;
+  margin: 35px 0 20px;
+}
+
+.intro {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 3em 0;
+  background-color: var(--content-hover-color);
+}
+
+.intro__content {
+  padding: 3em 0;
+}
+
+.intro__content p {
+  padding: 2em 0;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.description_landing, .description_material, .description_model {
+  width: 25%;
+  padding: 2em 2em;
+  margin: 0 1em;
+}
+
+.description_landing, .description_material, .description_model {
+  border: 1px solid lightgray;
+  border-radius: 2em;
+}

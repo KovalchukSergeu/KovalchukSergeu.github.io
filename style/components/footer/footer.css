@@ -1,4 +1,5 @@
-@import "./../../project/style .css";
+@import "./../../style.css";
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 :root {
@@ -53,13 +54,13 @@ body {
 
 }
 
-.footer__basement .container {
+.footer__basement .basement__container {
   display: flex;
   justify-content: center;
 }
 
 .footer__basement a {
+  line-height: 100px;
   color: white;
-  height: 30px;
-  width: 30px;
+  padding: 0 1rem;
 }

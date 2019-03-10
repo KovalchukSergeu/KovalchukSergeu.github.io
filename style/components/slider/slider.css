@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-@import "./../../project/style .css";
+@import "./../../style.css";
+
 
 :root {
   --header-bg-color: var(--pearl-white);
@@ -10,15 +11,12 @@
   --header-focus-color: var(--pale-green);
 }
 
-body, html {
-  width: 100%;
-  height: 100%;
-  font-family: "Poppins", sans-serif;
-  background-color: var(--header-bg-color);
-
-  -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
-}
+/*body, html {*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*font-family: "Poppins", sans-serif;*/
+  /*background-color: var(--header-bg-color);*/
+/*}*/
 
 /* ------------------------ header -------------------------------------------*/
 nav {
@@ -41,7 +39,7 @@ nav {
 /* ------------------------ Slaider  -------------------------------- */
 
 .carousel-inner {
-  height: 500px;
+  height: 60rem;
 }
 
 .carousel-inner img {
@@ -53,7 +51,7 @@ nav {
 .carousel-caption {
   position: absolute;
   top: 50%;
-  transform: translateY(-85%);
+  transform: translateY(-65%);
   text-shadow: 1px 1px 10px #000;
 }
 

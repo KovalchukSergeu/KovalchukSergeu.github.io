@@ -1,0 +1,85 @@
+@import "./../../style.css";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+:root {
+  --contacts-bg-color: var(--pale-green);
+  --contacts-text-color: var(--honey-yellow);
+  --contacts-hover-color: var(--gray-silk);
+  --contacts-hover-text-color: var(--thunder);
+  --contacts-active-color: var(--gray-silk);
+  --contacts-focus-color: var(--pale-green);
+}
+
+.contacts_box {
+  margin: 0;
+}
+
+.contacts {
+  text-align: center;
+  background-color: var(--contacts-bg-color);
+  color: var(--contacts-text-color);
+  font-size: 2em;
+}
+
+.contacts h1 {
+  padding-top: 4em;
+  padding-bottom: 2em;
+  font-size: 3.2rem;
+}
+
+/*.contacts p {*/
+  /*font-size: 3.2rem;*/
+/*}*/
+
+.contacts__content {
+
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--contacts-bg-color);
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.contacts__content ul {
+  padding: 0;
+
+}
+
+.contacts__content_data {
+  margin-right: 5em;
+}
+
+.contacts__content_data li {
+
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.contacts__content_data a {
+
+  color: var(--contacts-text-color);
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.contacts__content_data a:hover {
+
+  color: var(--contacts-hover-text-color);
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.content__map {
+  width: 100%;
+  height: 60rem;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 5rem 0;
+
+  background-color: var(--contacts-bg-color);
+}
