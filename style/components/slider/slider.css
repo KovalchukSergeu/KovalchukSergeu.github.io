@@ -51,7 +51,7 @@ nav {
 .carousel-caption {
   position: absolute;
   top: 50%;
-  transform: translateY(-75%);
+  transform: translateY(-85%);
   text-shadow: 1px 1px 10px #000;
 }
 

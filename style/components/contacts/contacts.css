@@ -82,4 +82,5 @@
   padding: 5rem 0;
 
   background-color: var(--contacts-bg-color);
+  z-index: 0;
 }

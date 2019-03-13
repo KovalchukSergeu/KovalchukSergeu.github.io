@@ -14,19 +14,23 @@ body {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
   box-sizing: border-box;
   width: 100%;
-  height: 6rem;
+  height: 4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background: var(--header-bg-color);
+  z-index: 99;
 }
 
 .logo img{
  width: 10rem;
- height: 6rem;
-  margin-left: 2rem;
+ height: 4rem;
+ margin-left: 2rem;
 }
 
 .menu ul {
@@ -38,8 +42,9 @@ body {
 }
 
 .menu a{
-  display: block;
-  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
   padding: 0 1.5rem;
   border-radius: 0.4em;
   text-decoration: none;
@@ -47,7 +52,7 @@ body {
   font-size: 1.5em;
   font-family: "Niagara Solid", sans-serif;
   color: var(--header-text-color);
-  line-height: 5rem;
+  line-height: 4rem;
 
 }
 
