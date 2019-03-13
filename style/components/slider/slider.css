@@ -39,7 +39,7 @@ nav {
 /* ------------------------ Slaider  -------------------------------- */
 
 .carousel-inner {
-  height: 60rem;
+  height: 30rem;
 }
 
 .carousel-inner img {
@@ -51,7 +51,7 @@ nav {
 .carousel-caption {
   position: absolute;
   top: 50%;
-  transform: translateY(-65%);
+  transform: translateY(-75%);
   text-shadow: 1px 1px 10px #000;
 }
 
