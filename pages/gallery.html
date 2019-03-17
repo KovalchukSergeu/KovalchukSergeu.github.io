@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../style/components/slider/slider.css">
     <link rel="stylesheet" href="./../style/components/content/content.css">
     <link rel="stylesheet" href="./../style/components/footer/footer.css">
+    <link rel="stylesheet" href="./../style/components/gallery/gallery.css">
 
     <script src="./../script/jquery.min.js"></script>
     <script src="./../script/popper.min.js"></script>
@@ -32,66 +33,124 @@
         </ul>
       </nav>
     </header>
-    <!--------------------------------Слайдер сайта ----------------------------------->
-    <div class="carousel slide" data-ride="carousel" id="slides">
-      <ul class="carousel-indicators">
-        <li data-target="#slides" data-slide-to="0" class="active"></li>
-        <li data-target="#slides" data-slide-to="1"></li>
-        <li data-target="#slides" data-slide-to="2"></li>
-      </ul>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./../img/slaider_1.jpg" alt="">
-          <div class="carousel-caption">
-            <h1 class="display-2">Платье "Солнце"</h1>
-            <h3>Коллекция весна-лето</h3>
-            <button type="button" class="btn btn-outline-light btn-lg">Посмотреть</button>
-            <button type="button" class="btn btn-warning btn-lg">Купить</button>
+    <!-- ------------------------------Слайдер сайта --------------------------------- -->
+    <div class="slider__section">
+      <section class="slider">
+        <div class="carousel slide" data-ride="carousel" id="slides">
+          <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+          </ul>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/slaider_1.jpg" alt="slider">
+              <div class="carousel-caption">
+                <h1 class="display-2">Платье "Солнце"</h1>
+                <h3>Коллекция весна-лето</h3>
+                <button type="button" class="btn btn-outline-light btn-lg">Посмотреть</button>
+                <button type="button" class="btn btn-warning btn-lg">Купить</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../img/slaider_2.jpg" alt="slider">
+              <div class="carousel-caption">
+                <h1 class="display-2">Платье "Виктория"</h1>
+                <h3>Коллекция весна-лето</h3>
+                <button type="button" class="btn btn-outline-light btn-lg">Посмотреть</button>
+                <button type="button" class="btn btn-warning btn-lg">Купить</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../img/slaider_3.jpg" alt="slider">
+              <div class="carousel-caption">
+                <h1 class="display-2">Платье "Ромбы"</h1>
+                <h3>Коллекция весна-лето</h3>
+                <button type="button" class="btn btn-outline-light btn-lg">Посмотреть</button>
+                <button type="button" class="btn btn-warning btn-lg">Купить</button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="./../img/slaider_2.jpg" alt="">
-          <div class="carousel-caption">
-            <h1 class="display-2">Платье "Виктория"</h1>
-            <h3>Коллекция весна-лето</h3>
-            <button type="button" class="btn btn-outline-light btn-lg">Посмотреть</button>
-            <button type="button" class="btn btn-warning btn-lg">Купить</button>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./../img/slaider_3.jpg" alt="">
-          <div class="carousel-caption">
-            <h1 class="display-2">Платье "Ромбы"</h1>
-            <h3>Коллекция весна-лето</h3>
-            <button type="button" class="btn btn-outline-light btn-lg">Посмотреть</button>
-            <button type="button" class="btn btn-warning btn-lg">Купить</button>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
     <!--------------------------------Контент ----------------------------------->
-    <section class="main__container">
-      <div class="content">
-        <h1>Швейное предприятие "СиА-Про"</h1>
-        <p>Швейная фабрика "СиА-Про" специализируется на создании качественной и модной одежды. Наше
-          оборудование позволяет работать с разнообразными тканями.
-          <br> Это:</p>
-        <ul>
-          <li>Хлопок</li>
-          <li>Вискоза</li>
-          <li>Полиэстер</li>
-          <li>Шерсть</li>
-          <li>Сетка</li>
-        </ul>
-        <p>Обратите внимание на то, что профессионализм наших мастеров и полноценное оснащение фабрики позволяет
-          создавать как повседневную одежду, так и вечерние наряды для всей семьи. Мы предлагаем познакомиться с
-          ассортиментом продукции, который является полноценным. У нас вы можете отыскать всю необходимую одежду.
-          Рассматривая оборудование, которое позволяет создавать такой обширный ассортимент, нужно выделить: <b> швейное
-            и раскройное оборудование от известных изготовителей</b>,<b>промышленные вто</b>.</p>
+    <section class="portfolio">
+      <h1>Наша продукция :</h1>
+      <div class="gallery">
+        <div class="image-container">
+          <img class="preview" src="../img/gallery/gallery1.jpg" alt="generation" title="generation">
+          <div class="hover-buttons">
+            <a class="zoom" href="#img-1">zoom image-1</a>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="preview" src="../img/gallery/gallery2.jpg" alt="strenght" title="strenght">
+          <div class="hover-buttons">
+            <a class="zoom" href="#img-2">zoom image-2</a>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="preview" src="../img/gallery/gallery3.jpg" alt="movement" title="movement">
+          <div class="hover-buttons">
+            <a class="zoom" href="#img-3">zoom image-3</a>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="preview" src="../img/gallery/gallery4.jpg" alt="bmw_x1" title="bmw_x1">
+          <div class="hover-buttons">
+            <a class="zoom" href="#img-4">zoom image-4</a>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="preview" src="../img/gallery/gallery5.jpg" alt="bmw_x2" title="bmw_x2">
+          <div class="hover-buttons">
+            <a class="zoom" href="#img-5">zoom image-5</a>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="preview" src="../img/gallery/gallery6.jpg" alt="bmw_x3" title="bmw_x3">
+          <div class="hover-buttons">
+            <a class="zoom" href="#img-6">zoom image-5</a>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="preview" src="../img/gallery/gallery7.jpg" alt="bmw_x4" title="bmw_x4">
+          <div class="hover-buttons">
+            <a class="zoom" href="#img-7">zoom image-5</a>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="preview" src="../img/gallery/gallery8.jpg" alt="bmw_x5" title="bmw_x5">
+          <div class="hover-buttons">
+            <a class="zoom" href="#img-8">zoom image-5</a>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="preview" src="../img/gallery/gallery9.jpg" alt="bmw_x6" title="bmw_x6">
+          <div class="hover-buttons">
+            <a class="zoom" href="#img-9">zoom image-5</a>
+          </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="popup">
+          <img id="img-1" class="full-image" src="../img/gallery/gallery1.jpg" alt="generation" title="generation">
+          <img id="img-2" class="full-image" src="../img/gallery/gallery2.jpg" alt="strenght" title="strenght">
+          <img id="img-3" class="full-image" src="../img/gallery/gallery3.jpg" alt="movement" title="movement">
+          <img id="img-4" class="full-image" src="../img/gallery/gallery4.jpg" alt="bmw_x1" title="bmw_x1">
+          <img id="img-5" class="full-image" src="../img/gallery/gallery5.jpg" alt="bmw_x2" title="bmw_x2">
+          <img id="img-6" class="full-image" src="../img/gallery/gallery6.jpg" alt="bmw_x3" title="bmw_x3">
+          <img id="img-7" class="full-image" src="../img/gallery/gallery7.jpg" alt="bmw_x4" title="bmw_x4">
+          <img id="img-8" class="full-image" src="../img/gallery/gallery8.jpg" alt="bmw_x5" title="bmw_x5">
+          <img id="img-9" class="full-image" src="../img/gallery/gallery9.jpg" alt="bmw_x6" title="bmw_x6">
+          <span class="close"></span>
+        </div>
       </div>
     </section>
+    <script src="../js/gallery.js"></script>
+    <script src="../js/active-link.js"></script>
     <!--------------------------------Footer ----------------------------------->
-    <footer class="footer ">
+    <footer class="footer">
       <div class="footer-top footer">
         <section class="footer-top__info">
           <h2>SiA-Pro</h2>
@@ -107,7 +166,7 @@
         </section>
         <section class="footer-top__map">
           <script type="text/javascript" charset="utf-8" async
-                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e89e922b3becc58356b1d08b57d8f314a061f678a0446d1d72130a429c53f9b&amp;width=400&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
+                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e89e922b3becc58356b1d08b57d8f314a061f678a0446d1d72130a429c53f9b&amp;width=400&amp;height=300&amp;lang=ru_RU&amp;scroll=true">
           </script>
         </section>
       </div>

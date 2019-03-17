@@ -17,7 +17,7 @@
 .contacts {
   text-align: center;
   background-color: var(--contacts-bg-color);
-  color: var(--contacts-text-color);
+  color: #3f2c08;
   font-size: 2em;
 }
 
@@ -60,14 +60,14 @@
 
 .contacts__content_data a {
 
-  color: var(--contacts-text-color);
+  color: #3f2c08;
   text-decoration: none;
   list-style-type: none;
 }
 
 .contacts__content_data a:hover {
 
-  color: var(--contacts-hover-text-color);
+  color: var(--contacts-text-color);
   text-decoration: none;
   list-style-type: none;
 }

@@ -18,25 +18,40 @@
   /*background-color: var(--header-bg-color);*/
 /*}*/
 
-/* ------------------------ header -------------------------------------------*/
-nav {
-  background-color: var(--header-bg-color);
-  tab-index: impotant;
-}
+/*!* ------------------------ header -------------------------------------------*!*/
+/*nav {*/
+  /*background-color: var(--header-bg-color);*/
+  /*tab-index: impotant;*/
+/*}*/
 
-.navbar-brad img {
-  width: 150px;
-}
+/*.navbar-brad img {*/
+  /*width: 150px;*/
+/*}*/
 
-.navbar-nav li {
-  padding-right: 7rem;
-}
+/*.navbar-nav li {*/
+  /*padding-right: 7rem;*/
+/*}*/
 
-.nav-link {
-  font-size: 1.4em;
-}
+/*.nav-link {*/
+  /*font-size: 1.4em;*/
+/*}*/
 
 /* ------------------------ Slaider  -------------------------------- */
+
+.slider__section {
+  width: 100%;
+}
+.slider {
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.carousel {
+  width: 80%;
+
+}
 
 .carousel-inner {
   height: 30rem;

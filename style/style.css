@@ -1,9 +1,9 @@
 :root {
   --pearl-white: #f4f1e8;
-  --pale-green: #e2e2c7;
+  --pale-green: #C4BFA8;
   --gray-silk: #c4bfa8;
   --honey-yellow: #a58b08;
-  --thunder: #0c0202;
+  --thunder: rgb(12, 2, 2);
 }
 
 /* Mobile-First */
@@ -11,7 +11,7 @@
 
 body {
   background: var(--pale-green);
-  color: #0a0432;
+  color: #3f2c08;
   font: .9em tahoma, verdana, arial normal;
   margin: 0;
 
@@ -19,7 +19,7 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--honey-yellow);
 }
 
 /* ----------------------- О нас -----------------------------------------------------*/
