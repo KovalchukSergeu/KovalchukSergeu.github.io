@@ -10,10 +10,11 @@
 }
 
 .header {
+  font-size: 1rem;
   position: fixed;
   box-sizing: border-box;
   width: 100%;
-  height: 4rem;
+  height: 4em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,9 +25,9 @@
 }
 
 .logo img {
-  width: 10rem;
-  height: 4rem;
-  margin-left: 2rem;
+  width: 10em;
+  height: 4em;
+  margin-left: 2em;
 }
 
 .menu ul {
