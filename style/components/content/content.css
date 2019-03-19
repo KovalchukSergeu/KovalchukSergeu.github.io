@@ -57,6 +57,7 @@ body {
   background-size: cover;
   z-index: 3;
   transition-delay: 0.2s;
+
 }
 .tablet {
   width: 50vh;
@@ -134,12 +135,11 @@ body {
 }
 
 .description_landing, .description_material, .description_model {
-  width: 25%;
+  max-height: 30em;
+  overflow: hidden;
+  width: 26em;
   padding: 2em 2em;
   margin: 0 1em;
-}
-
-.description_landing, .description_material, .description_model {
   border: 1px solid lightgray;
   border-radius: 2em;
 }
