@@ -1,6 +1,5 @@
 @import "./../style.css";
-
-@import url('../../fonts/');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 :root {
   --footer-bg-color: var(--pearl-white);
@@ -13,9 +12,18 @@
 
 .footer {
   width: 100%;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   color: var(--footer-text-color);
   background-color: var(--footer-bg-basement-color);
+}
+
+.footer-top, .footer__basement {
+  width: 100%;
+  max-width: 1920px;
 }
 
 .footer-top {

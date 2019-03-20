@@ -207,7 +207,7 @@ body {
 .description_landing, .description_material, .description_model {
   width: 26em;
   min-width: 320px;
-  height: 30em;
+  height: 32em;
   padding: 2em 2em;
   margin: 1em 1em;
   border: 1px solid lightgray;
