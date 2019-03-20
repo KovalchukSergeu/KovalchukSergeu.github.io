@@ -19,7 +19,7 @@
 
 .about-us__intro {
   margin: 1em 0;
-  color: var(--footer-text-color);
+  color: inherit;
 }
 
 .about-us__intro h1{
@@ -28,8 +28,4 @@
   font-family: "Poppins", sans-serif;
   font-style: italic;
   font-weight: bold;
-}
-
-.section {
-  margin-top: 4em;
 }

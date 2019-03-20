@@ -1,0 +1,218 @@
+@import "./../style.css";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+:root {
+  --content-bg-color: var(--pearl-white);
+  --content-text-color: var(--honey-yellow);
+  --content-hover-color: var(--gray-silk);
+  --content-hover-text-color: var(--pearl-white);
+  --content-active-color: var(--gray-silk);
+  --content-focus-color: var(--pale-green);
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+.video-fon,
+.description,
+.main__container,
+.section,
+.main-wrap,
+.scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*   -----------------------------   Video fon    ------------------------ */
+.video-fon {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  z-index: 50;
+}
+
+.wrap-block h1, .wrap-block h2, .wrap-block p {
+  font-style: italic;
+}
+
+.wrap-block h1 {
+  color: var(--header-hover-text-color);
+  font-size: 3rem;
+}
+
+.wrap-block h2 {
+  color: var(--header-text-color);
+  font-size: 2rem;
+}
+
+.wrap-block p {
+  color: var(--header-hover-text-color);
+  font-size: 1.5rem;
+}
+
+.scroll {
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  background-color: #007bff;
+}
+
+/*   ---------------------Основной контент -------------------------- */
+
+.main-wrap {
+  flex-direction: column;
+  width: 100%;
+}
+
+/*  ---------------------Вступление -----------------------------------*/
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  perspective: 1000px;
+  background-color: var(--content-focus-color);
+  color: #3f2c08;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.introduction__text {
+  width: 40%;
+  z-index: 10;
+}
+
+@media screen and (max-width: 530px){
+  .introduction {
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .introduction_thirdPhoto, .introduction_secondPhoto {
+    display: none;
+  }
+}
+
+.introduction_firstPhoto,
+.introduction_secondPhoto,
+.introduction_thirdPhoto {
+  background-color: #fff;
+  box-shadow: 13px 13px 32px 0 #725139;
+  position: absolute;
+  transition: 1s;
+  transform: translateX(-250%);
+}
+.introduction:hover .introduction_firstPhoto,
+.introduction:hover .introduction_secondPhoto,
+.introduction:hover .introduction_thirdPhoto {
+  transform: translateY(10px) rotateY(-15deg);
+}
+.introduction_firstPhoto {
+  width: 30vh;
+  height: 50vh;
+  left: 5%;
+  bottom: 10%;
+  background: #fff url('./../../img/gallery/spring/spring1.jpg') center no-repeat;
+  background-size: cover;
+  z-index: 3;
+  transition-delay: 0.2s;
+
+}
+.introduction_secondPhoto {
+  width: 50vh;
+  height: 65vh;
+  background: #fff url('./../../img/gallery/spring/spring2.jpg') top no-repeat;
+  background-size: cover;
+  bottom: 10%;
+  left: 12%;
+  z-index: 1;
+  transition-delay: 0.4s;
+}
+.introduction_thirdPhoto {
+  width: 55vh;
+  height: 75vh;
+  background: #fff url('./../../img/gallery/spring/spring4.jpg') top no-repeat;
+  background-size: cover;
+  bottom: 13%;
+  left: 27%;
+  transition-delay: 0.6s;
+}
+/* ----------------------------- Контент ----------------------------------------- */
+.main__container {
+  width: 100%;
+  max-width: 1920px;
+  flex-direction: column;
+  background-color: var(--content-bg-color);
+}
+
+.content {
+  width: 70%;
+  background-color: var(--content-bg-color);
+  font-family: "Poppins", sans-serif;
+  color: inherit;
+}
+
+.content h1 {
+  font-size: 3em;
+  font-family: "Poppins", sans-serif;
+  padding: 1em 0;
+}
+
+.content p {
+  font-size: 1.5em;
+  font-family: "Poppins", sans-serif;
+  padding-top: 1em;
+}
+
+.hr {
+  background: url("./../../img/hr-000.png") no-repeat 50% 50%;
+  width: 100%;
+  height: 10px;
+  margin: 20px 0 20px;
+}
+
+.intro {
+  width: 90%;
+  max-width: 1920px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2em 0;
+  background-color: var(--content-hover-color);
+}
+
+.intro__content {
+  padding: 1em 0;
+}
+
+.intro__content p {
+  padding: 1em 0;
+}
+
+.description {
+  width: 100%;
+  max-width: 1920px;
+  flex-wrap: wrap;
+
+}
+
+.description_landing, .description_material, .description_model {
+  width: 26em;
+  min-width: 320px;
+  height: 30em;
+  padding: 2em 2em;
+  margin: 1em 1em;
+  border: 1px solid lightgray;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+

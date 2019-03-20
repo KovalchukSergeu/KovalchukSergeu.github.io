@@ -1,0 +1,89 @@
+@import "./../style.css";
+
+:root {
+  --button-bg-color: var(--pearl-white);
+  --button-text-color: var(--honey-yellow);
+  --button-hover-color: var(--gray-silk);
+  --button-active-color: var(--gray-silk);
+  --button-focus-color: var(--pale-green);
+}
+
+
+/*  -----------------Кнопка скролла --------------------- */
+.btn_upScroll{
+  display: block;
+  position: fixed;
+  bottom: -190px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background: #333;
+  z-index: 100;
+  outline: 0 !important;
+  transition: .4s;
+}
+
+@media screen and (max-width: 670px){
+  .btn_upScroll {
+    right: 3px;
+  }
+}
+
+.btn_upScroll:after{
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.btn_upScroll.active {
+  bottom: 190px;
+}
+
+
+.btn_container {
+  height: 3em;
+}
+
+.btn_downScroll{
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  border: 0.11em solid #ccc;
+  background: #333;
+  z-index: 500;
+  outline: 0 !important;
+  animation: dws-bounce 3s linear infinite;
+}
+
+.btn_downScroll:after{
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-bottom: 0.11em solid #ccc;
+  border-right: 0.11em solid #ccc;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0.22em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@keyframes dws-bounce {
+  0% {bottom: 10%; }
+  50% {bottom: 15%; }
+  100% {bottom: 10%; }
+}

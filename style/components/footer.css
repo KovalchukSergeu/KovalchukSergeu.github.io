@@ -1,6 +1,6 @@
-@import "./../../style.css";
+@import "./../style.css";
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('../../fonts/');
 
 :root {
   --footer-bg-color: var(--pearl-white);
@@ -13,7 +13,6 @@
 
 .footer {
   width: 100%;
-  height: 320px;
   display: block;
   color: var(--footer-text-color);
   background-color: var(--footer-bg-basement-color);
@@ -22,11 +21,13 @@
 .footer-top {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding-top: 1em;
 }
 
 .footer-top__info, .footer-top__contacts, .footer-top__map {
-  width: 20%;
+  width: 30%;
+  min-width: 15em;
 }
 
 .footer-top__info, .footer-top__contacts {
@@ -53,6 +54,13 @@
 .footer__basement .basement__container {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 400px){
+  .footer__basement .basement__container {
+    justify-content: flex-start;
+  }
 }
 
 .footer__basement a {
@@ -63,4 +71,14 @@
 
 .footer__basement a:hover {
   color: var(--footer-text-color);
+}
+
+@media screen and (max-width: 1160px){
+  .footer-top__map {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -1,4 +1,4 @@
-@import "./../../style.css";
+@import "./../style.css";
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
@@ -12,31 +12,57 @@
 
 .main-gallery {
   width: 100%;
+}
+
+.main-gallery, .spring, .spring-summer, .summer, .spring__gallery ,
+.spring-summer__gallery ,
+.summer__gallery {
   display: flex;
+}
+
+.main-gallery, .spring, .spring-summer, .summer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.spring, .spring-summer, .summer {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 3vh 0;
+.slider__section {
+ padding-top: 4em;
 }
 
-.spring, .spring-summer, .summer h2 {
-  text-align: center;
+.spring, .spring-summer, .summer {
+  width: 90%;
+  max-width: 2600px;
+  margin: 3vh 0;
 }
 
 .spring__gallery ,
 .spring-summer__gallery ,
 .summer__gallery {
-  display: flex;
   flex-wrap: wrap;
   flex-flow: row wrap;
   padding: .5vw;
+}
+
+@media screen and (max-width: 2501px){
+  .spring__gallery, .spring-summer__gallery, .summer__gallery {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1260px){
+  .spring__gallery, .spring-summer__gallery, .summer__gallery {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .spring__gallery, .spring-summer__gallery, .summer__gallery {
+    max-width: 320px;
+  }
+  .boxImg {
+    margin: .5vw 0;
+  }
 }
 
 .spring h2,
@@ -45,12 +71,14 @@
   font-size: 3em;
   background-color: rgba(120, 101, 56, 0.51);
   color: white;
-  border-radius: 33px;
+  border-radius: 0.5em;
+  text-align: center;
+  width: 40vh;
 }
 
 .boxImg {
   flex: auto;
-  width: 350px;
+  width: 24em;
   margin: .5vw;
   position: relative;
   overflow: hidden;
@@ -58,21 +86,21 @@
 
 
 .boxImg img {
-  width: 100%;
-  height: 38em;
+  width: 26em;
+  height: 40em;
   transition: .5s;
+  overflow: hidden;
 }
 
 .boxImg_container {
-  width: 100%;
+  width: 24em;
   height: 100%;
-  overflow: hidden;
 }
 
 .boxImg_container:before, .boxImg_container:after {
   content: '';
   width: 25em;
-  height: 38em;
+  height: 39em;
   position: absolute;
   top: 0;
   left: 0;
@@ -190,6 +218,7 @@
   transform: scale(1);
   opacity: 1;
 }
+
 
 
 

@@ -1,3 +1,13 @@
+@import "./bootstrap.min.css";
+@import "./components/button.css";
+@import "./components/slider.css";
+@import "./components/content.css";
+@import "./components/about_us.css";
+@import "./components/gallery.css";
+@import "./components/footer.css";
+@import "./components/contacts.css";
+@import "./components/header.css";
+
 :root {
   --pearl-white: #f4f1e8;
   --pale-green: #C4BFA8;
@@ -8,6 +18,10 @@
 
 /* Mobile-First */
 /* Normalization */
+
+* {
+  transition: .2s;
+}
 
 body {
   background: var(--pale-green);

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-@import "./../../style.css";
+@import "./../style.css";
 
 
 :root {
@@ -10,7 +10,7 @@
   --header-active-color: var(--gray-silk);
   --header-focus-color: var(--pale-green);
 }
-/* ------------------------ Slaider  -------------------------------- */
+/* ------------------------ Slider  -------------------------------- */
 
 .slider__section {
   font-size: 1rem;

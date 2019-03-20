@@ -8,31 +8,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./../style/style.css">
     <link rel="icon" type="image/ico" href="../sia-pro.ico">
-
-    <link rel="stylesheet" href="./../style/components/header/header.css">
-    <link rel="stylesheet" href="./../style/components/button/button.css">
-    <link rel="stylesheet" href="../style/components/slider/slider.css">
-    <link rel="stylesheet" href="./../style/components/content/content.css">
-    <link rel="stylesheet" href="./../style/components/footer/footer.css">
-    <link rel="stylesheet" href="./../style/components/gallery/gallery.css">
-
-    <script src="./../js/jquery.min.js"></script>
-    <script src="./../js/popper.min.js"></script>
-    <script src="./../js/bootstrap.min.js"></script>
-    <script src="./../js/all.js"></script>
   </head>
   <body>
-    <!--------------------------------------Header ----------------------------------->
-    <header class="header">
-      <section class="logo"><img src="./../img/logo.svg" alt="logo"></section>
-      <nav class="menu">
-        <ul>
-          <li><a href="./../index.html" tabindex="1">Главная</a></li>
-          <li><a href="./about_us.html" tabindex="1">О нас</a></li>
-          <li><a href="./gallery.html" tabindex="1">Галерея</a></li>
-          <li><a href="./contacts.html" tabindex="1">Контакты</a></li>
-        </ul>
-      </nav>
+    <!-- ------------------------------------Header --------------------------------- -->
+    <header>
+      <div class="header">
+        <nav class="dws-menu">
+          <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+          <label for="menu" class="toggleMenu"><i class="fa fa-bars"></i>Меню</label>
+          <ul>
+            <li><a href="../index.html"><i class="fa fa-home"></i>Главная</a></li>
+            <li><a href="./about_us.html"><i class="fa fa-list"></i>О нас</a></li>
+            <li><a href="./gallery.html"><i class="fa fa-th-list"></i>Галерея</a></li>
+            <li><a href="./contacts.html"><i class="fa fa-envelope-open"></i>Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- ------------------------------Слайдер сайта --------------------------------- -->
     <div class="slider__section">
@@ -49,8 +40,10 @@
               <div class="carousel-caption">
                 <h1 class="display-2">Платье "Солнце"</h1>
                 <h3>Коллекция весна-лето</h3>
-                <button type="button" class="btn btn-outline-light btn-lg"><a href="gallery.html">Посмотреть</a></button>
-                <button type="button" class="btn btn-warning btn-lg"><a href="../pages/contacts.html">Купить</a></button>
+                <button type="button" class="btn btn-outline-light btn-lg"><a href="gallery.html">Посмотреть</a>
+                </button>
+                <button type="button" class="btn btn-warning btn-lg"><a href="../pages/contacts.html">Купить</a>
+                </button>
               </div>
             </div>
             <div class="carousel-item">
@@ -58,8 +51,10 @@
               <div class="carousel-caption">
                 <h1 class="display-2">Платье "Виктория"</h1>
                 <h3>Коллекция весна-лето</h3>
-                <button type="button" class="btn btn-outline-light btn-lg"><a href="gallery.html">Посмотреть</a></button>
-                <button type="button" class="btn btn-warning btn-lg"><a href="../pages/contacts.html">Купить</a></button>
+                <button type="button" class="btn btn-outline-light btn-lg"><a href="gallery.html">Посмотреть</a>
+                </button>
+                <button type="button" class="btn btn-warning btn-lg"><a href="../pages/contacts.html">Купить</a>
+                </button>
               </div>
             </div>
             <div class="carousel-item">
@@ -67,8 +62,10 @@
               <div class="carousel-caption">
                 <h1 class="display-2">Платье "Ромбы"</h1>
                 <h3>Коллекция весна-лето</h3>
-                <button type="button" class="btn btn-outline-light btn-lg"><a href="gallery.html">Посмотреть</a></button>
-                <button type="button" class="btn btn-warning btn-lg"><a href="../pages/contacts.html">Купить</a></button>
+                <button type="button" class="btn btn-outline-light btn-lg"><a href="gallery.html">Посмотреть</a>
+                </button>
+                <button type="button" class="btn btn-warning btn-lg"><a href="../pages/contacts.html">Купить</a>
+                </button>
               </div>
             </div>
           </div>
@@ -81,7 +78,7 @@
         <h2>Коллекция Весна 2019</h2>
         <div class="spring-summer__gallery">
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery1.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/spring/spring1.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М555</h3>
               <p>Размеры: 42-48 <br>
@@ -90,7 +87,7 @@
             </div>
           </div>
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery2.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/spring/spring2.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М572</h3>
               <p>Размеры: 42-48 <br>
@@ -99,7 +96,7 @@
             </div>
           </div>
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery3.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/spring/spring3.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М575</h3>
               <p>Размеры: 42-48 <br>
@@ -108,7 +105,7 @@
             </div>
           </div>
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery4.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/spring/spring4.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М582</h3>
               <p>Размеры: 42-48 <br>
@@ -117,7 +114,7 @@
             </div>
           </div>
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery5.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/spring/spring5.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М587</h3>
               <p>Размеры: 42-48 <br>
@@ -126,7 +123,7 @@
             </div>
           </div>
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery6.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/spring/spring6.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М591</h3>
               <p>Размеры: 42-48 <br>
@@ -140,7 +137,7 @@
         <h2>Коллекция Весна-Лето 2019</h2>
         <div class="spring-summer__gallery">
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery7.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/spring-summer/spring-summer1.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М600</h3>
               <p>Размеры: 42-48 <br>
@@ -149,7 +146,7 @@
             </div>
           </div>
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery8.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/spring-summer/spring-summer2.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М602</h3>
               <p>Размеры: 42-48 <br>
@@ -158,7 +155,7 @@
             </div>
           </div>
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery9.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/spring-summer/spring-summer3.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М604</h3>
               <p>Размеры: 42-48 <br>
@@ -167,7 +164,7 @@
             </div>
           </div>
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery10.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/spring-summer/spring-summer4.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М607</h3>
               <p>Размеры: 42-48 <br>
@@ -176,7 +173,7 @@
             </div>
           </div>
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery11.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/spring-summer/spring-summer5.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М608</h3>
               <p>Размеры: 42-48 <br>
@@ -185,7 +182,7 @@
             </div>
           </div>
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery1.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/spring-summer/spring-summer6.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М611</h3>
               <p>Размеры: 42-48 <br>
@@ -199,7 +196,7 @@
         <h2>Коллекция Лето 2019</h2>
         <div class="spring-summer__gallery">
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery2.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/summer/summer1.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М701</h3>
               <p>Размеры: 42-48 <br>
@@ -208,7 +205,7 @@
             </div>
           </div>
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery3.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/summer/summer2.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М705</h3>
               <p>Размеры: 42-48 <br>
@@ -217,7 +214,7 @@
             </div>
           </div>
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery4.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/summer/summer3.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М706</h3>
               <p>Размеры: 42-48 <br>
@@ -226,7 +223,7 @@
             </div>
           </div>
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery5.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/summer/summer4.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М707</h3>
               <p>Размеры: 42-48 <br>
@@ -235,7 +232,7 @@
             </div>
           </div>
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery6.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/summer/summer5.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М709</h3>
               <p>Размеры: 42-48 <br>
@@ -244,7 +241,7 @@
             </div>
           </div>
           <div class="boxImg">
-            <div class="boxImg_container"><img src="../img/gallery/gallery7.jpg" alt="gallery image"></div>
+            <div class="boxImg_container"><img src="../img/gallery/summer/summer6.jpg" alt="gallery image"></div>
             <div class="boxImg_text">
               <h3>Платье-женское М713</h3>
               <p>Размеры: 42-48 <br>
@@ -255,7 +252,7 @@
         </div>
       </div>
     </section>
-    <!--------------------------------Footer ----------------------------------->
+    <!-- ------------------------------Footer --------------------------------- -->
     <footer class="footer">
       <div class="footer-top footer">
         <section class="footer-top__info">
@@ -272,7 +269,7 @@
         </section>
         <section class="footer-top__map">
           <script type="text/javascript" charset="utf-8" async
-                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e89e922b3becc58356b1d08b57d8f314a061f678a0446d1d72130a429c53f9b&amp;width=400&amp;height=300&amp;lang=ru_RU&amp;scroll=true">
+                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e89e922b3becc58356b1d08b57d8f314a061f678a0446d1d72130a429c53f9b&amp;width=320&amp;height=300&amp;lang=ru_RU&amp;scroll=true">
           </script>
         </section>
       </div>
@@ -285,9 +282,14 @@
             <a href="#" title="Одноклассники"><i class="fab fa-odnoklassniki fa-2x"></i></a>
           </div>
         </div>
+        <div><a href="#" class="btn_upScroll" ></a></div>
       </div>
     </footer>
-    <!--------- Подключение виджета обратной связи через соц. сети-->
     <script type="text/javascript" src="https://spikmi.com/Widget?Id=393"></script>
+    <script src="./../js/jquery.min.js"></script>
+    <script src="./../js/popper.min.js"></script>
+    <script src="./../js/bootstrap.min.js"></script>
+    <script src="./../js/all.js"></script>
+    <script src="./../js/script.js"></script>
   </body>
 </html>
