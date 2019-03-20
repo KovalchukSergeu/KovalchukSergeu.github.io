@@ -1,0 +1,36 @@
+{
+  "name": "SiA-Pro",
+  "short_name": "SiA-Pro",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Швейное предприятие СиА-Про",
+  "icons": [{
+    "src": "img/favicon/favicon-16x16.png",
+    "sizes": "16x16",
+    "type": "image/png"
+  }, {
+    "src": "img/favicon/favicon-32x32.png",
+    "sizes": "32x32",
+    "type": "image/png"
+  }, {
+    "src": "img/favicon/android-chrome-144x144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "img/favicon/mstile-150x150.png",
+    "sizes": "150x150",
+    "type": "image/png"
+  }, {
+    "src": "img/favicon/apple-touch-icon.png",
+    "sizes": "152x152",
+    "type": "image/png"
+  }, {
+    "src": "img/favicon/safari-pinned-tab.svg",
+    "sizes": "142x142",
+    "type": "image/svg"
+  }],
+  "related_applications": [{
+    "platform": "web"
+  }]
+}
