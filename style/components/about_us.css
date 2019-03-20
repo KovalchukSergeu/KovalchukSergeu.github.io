@@ -2,12 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 :root {
-  --footer-bg-color: var(--pearl-white);
-  --footer-bg-basement-color: var(--thunder);
-  --footer-text-color: var(--honey-yellow);
-  --footer-hover-color: var(--pearl-white);
-  --footer-hover-text-color: var(--thunder);
-
+  --about-text-color: inherit;
 }
 
 .introduction {
@@ -35,6 +30,6 @@
   margin: 1em 0;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-style: italic;
+  font-style: var(--about-text-color);
   font-weight: bold;
 }

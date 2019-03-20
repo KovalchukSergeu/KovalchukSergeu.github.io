@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 @import "./../style.css";
 
-
-:root {
-  --header-bg-color: var(--pearl-white);
-  --header-text-color: var(--honey-yellow);
-  --header-hover-color: var(--gray-silk);
-  --header-hover-text-color: var(--pearl-white);
-  --header-active-color: var(--gray-silk);
-  --header-focus-color: var(--pale-green);
-}
 /* ------------------------ Slider  -------------------------------- */
 
 .slider__section {

@@ -13,11 +13,9 @@
   --pale-green: #C4BFA8;
   --gray-silk: #c4bfa8;
   --honey-yellow: #a58b08;
+  --cinnamon: #3f2c08;
   --thunder: rgb(12, 2, 2);
 }
-
-/* Mobile-First */
-/* Normalization */
 
 * {
   transition: .2s;
@@ -29,7 +27,6 @@ body {
   font: .9em tahoma, verdana, arial normal;
   margin: 0;
   outline: 1px solid var(--honey-yellow);
-
 }
 
 a {

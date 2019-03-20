@@ -2,12 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 :root {
-  --content-bg-color: var(--pearl-white);
-  --content-text-color: var(--honey-yellow);
-  --content-hover-color: var(--gray-silk);
-  --content-hover-text-color: var(--pearl-white);
-  --content-active-color: var(--gray-silk);
-  --content-focus-color: var(--pale-green);
+  --content-bg-color: #007bff;
+  --content-text-color: var(--cinnamon);
+  --content-intro-bg-color: var(--gray-silk);
+  --content-description-border-color: lightgray;
+  --content-introduction-bg-color: var(--pale-green);
 }
 
 body {
@@ -41,17 +40,17 @@ body {
 }
 
 .wrap-block h1 {
-  color: var(--header-hover-text-color);
+  color: #fff;
   font-size: 3rem;
 }
 
 .wrap-block h2 {
-  color: var(--header-text-color);
+  color: var(--content-text-color);
   font-size: 2rem;
 }
 
 .wrap-block p {
-  color: var(--header-hover-text-color);
+  color: #fff;
   font-size: 1.5rem;
 }
 
@@ -60,16 +59,8 @@ body {
   height: 20px;
   width: 20px;
   border-radius: 3px;
-  background-color: #007bff;
+  background-color: var(--content-bg-color);
 }
-
-/*   ---------------------Основной контент -------------------------- */
-
-.main-wrap {
-  flex-direction: column;
-  width: 100%;
-}
-
 /*  ---------------------Вступление -----------------------------------*/
 .introduction {
   display: flex;
@@ -81,7 +72,7 @@ body {
   max-width: 1920px;
   position: relative;
   perspective: 1000px;
-  background-color: var(--content-focus-color);
+  background-color: var(--content-introduction-bg-color);
   color: #3f2c08;
   font-style: italic;
   font-size: 1rem;
@@ -146,7 +137,13 @@ body {
   left: 27%;
   transition-delay: 0.6s;
 }
-/* ----------------------------- Контент ----------------------------------------- */
+
+/*   ---------------------Основной контент -------------------------- */
+.main-wrap {
+  flex-direction: column;
+  width: 100%;
+}
+
 .main__container {
   width: 100%;
   max-width: 1920px;
@@ -186,7 +183,7 @@ body {
   text-align: center;
   box-sizing: border-box;
   padding: 2em 0;
-  background-color: var(--content-hover-color);
+  background-color: var(--content-intro-bg-color);
 }
 
 .intro__content {
@@ -210,7 +207,7 @@ body {
   height: 32em;
   padding: 2em 2em;
   margin: 1em 1em;
-  border: 1px solid lightgray;
+  border: 1px solid var(--content-description-border-color);
   border-radius: 2em;
   overflow: hidden;
 }

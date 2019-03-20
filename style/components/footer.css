@@ -2,11 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 :root {
-  --footer-bg-color: var(--pearl-white);
   --footer-bg-basement-color: var(--thunder);
   --footer-text-color: var(--honey-yellow);
   --footer-hover-color: var(--pearl-white);
-  --footer-hover-text-color: var(--thunder);
 
 }
 

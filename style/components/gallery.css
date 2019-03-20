@@ -5,9 +5,9 @@
 :root {
   --gallery-bg-color: var(--pearl-white);
   --gallery-bg-h3-color: var(--pearl-white);
-  --footer-text-color: var(--honey-yellow);
-  --footer-hover-color: var(--pearl-white);
-  --footer-hover-text-color: var(--thunder);
+  --gallery-bt-color: #3f2c08;
+  --gallery-bt-bg-color: linear-gradient(90deg, rgba(228, 142, 103, 0.26), rgba(86, 76, 44, 0.73));
+  --gallery-h2-color: rgba(120, 101, 56, 0.51);
 }
 
 .main-gallery {
@@ -69,7 +69,7 @@
 .spring-summer h2,
 .summer h2 {
   font-size: 3em;
-  background-color: rgba(120, 101, 56, 0.51);
+  background-color: var(--gallery-h2-color);
   color: white;
   border-radius: 0.5em;
   text-align: center;
@@ -122,7 +122,7 @@
   width: 100%;
   top: 40%;
   left: 0;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   z-index: 10;
 }
@@ -131,11 +131,11 @@
   opacity: 1;
   transition: .5s;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 .boxImg:hover a.bt:hover {
-  color: #000000;
+  color: #000;
 }
 
 .boxImg_text h3 {
@@ -158,10 +158,10 @@
   position: absolute;
   top: 100%;
   left: 30%;
-  color: #3f2c08;
+  color: var(--gallery-bt-color);
   text-decoration: none;
   text-transform: uppercase;
-  border: 2px solid #3f2c08;
+  border: 2px solid var(--gallery-bt-color);
   padding: 16px 30px;
   border-radius: 8px;
   opacity: 0;
@@ -176,7 +176,7 @@
   left: -75px;
   height: 60px;
   width: 50px;
-  background: linear-gradient(90deg, rgba(228, 142, 103, 0.26), rgba(86, 76, 44, 0.73));
+  background: var(--gallery-bt-bg-color);
   opacity: 0;
   transition: 0.2s ease-in-out;
   transform: skewX(-45deg);

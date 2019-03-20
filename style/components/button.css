@@ -1,11 +1,8 @@
 @import "./../style.css";
 
 :root {
-  --button-bg-color: var(--pearl-white);
-  --button-text-color: var(--honey-yellow);
-  --button-hover-color: var(--gray-silk);
-  --button-active-color: var(--gray-silk);
-  --button-focus-color: var(--pale-green);
+  --button-bg-color: #333;
+  --button-border-color: #ccc;
 }
 
 
@@ -18,7 +15,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 2px solid #ccc;
+  border: 2px solid var(--button-border-color);
   background: #333;
   z-index: 100;
   outline: 0 !important;
@@ -35,8 +32,8 @@
   content: '';
   width: 10px;
   height: 10px;
-  border-top: 2px solid #ccc;
-  border-left: 2px solid #ccc;
+  border-top: 2px solid var(--button-border-color);
+  border-left: 2px solid var(--button-border-color);
   transform: rotate(45deg);
   position: absolute;
   top: 4px;
@@ -60,8 +57,8 @@
   width: 4em;
   height: 4em;
   border-radius: 50%;
-  border: 0.11em solid #ccc;
-  background: #333;
+  border: 0.11em solid var(--button-border-color);
+  background: var(--button-bg-color);
   z-index: 500;
   outline: 0 !important;
   animation: dws-bounce 3s linear infinite;
@@ -71,8 +68,8 @@
   content: '';
   width: 10px;
   height: 10px;
-  border-bottom: 0.11em solid #ccc;
-  border-right: 0.11em solid #ccc;
+  border-bottom: 0.11em solid var(--button-border-color);
+  border-right: 0.11em solid var(--button-border-color);
   transform: rotate(45deg);
   position: absolute;
   top: 0.22em;
