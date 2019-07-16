@@ -1,1 +1,1 @@
-# kovalchuk.sergeu.github.io
+# kovalchuk-project
